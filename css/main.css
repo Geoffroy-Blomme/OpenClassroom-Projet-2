@@ -1,4 +1,8 @@
 @import 'colors.css';
+:root{
+    --width-city-text:250px;
+    --height-form-city:48px;
+}
 
 *{
     box-sizing: border-box;
@@ -12,11 +16,14 @@
 
 }
 
+.main-header-logo-anchor{
+    display: inline-block;
+    margin: 40px 50px 30px 50px;
+}
+
 .main-header-logo{
     height: 40px;
     width: auto;
-    margin: 40px 50px;
-
 }
 
 .main-header-list{
@@ -43,9 +50,80 @@
     border-color: var(--main-blue);
 }
 
+main{
+    margin: 0px 45px;
+}
+
+.title-below-header{
+    margin: 0;
+    font-size: 19px;    
+}
+
+.paragraph-below-header{
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+.form-city{
+    margin: 15px 0;
+}
+
+.form-city-div{
+    position: relative;
+}
+
+.form-city-text{
+    position: absolute;
+    padding: 10px 15px 10px 40px;
+    left: 20px;
+    height: var(--height-form-city);
+    width: var(--width-city-text);
+    font-weight: bold;
+    border: 2px solid var(--bg-grey);
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+.form-city-text:focus{
+    outline: none;
+    
+}
+
+.form-city-search-button{
+    position: absolute;
+    height: var(--height-form-city);
+    left: var(--width-city-text);
+    background-color: var(--main-blue);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0px 14px 14px 0;
+}
+
+.form-city-location-icon{
+    position: absolute;
+    z-index: 2;
+    padding: 18px;
+    height: var(--height-form-city);
+    background-color: var(--bg-grey);
+    border-radius: 14px 0 0 14px;
+}
+.form-city-search-button{
+    height: 48px;
+}
+
+.form-city-search-icon{
+    display: none;
+}
+
 /*BreakPoint pour les tablettes */
 @media (max-width:992px){
-
+    .title-below-header{
+        font-size: 16px;
+}
+.paragraph-below-header{
+    font-size: 13px;
+}
 }
 
 /* Breakpoint pour les telephones*/
@@ -56,9 +134,8 @@
     align-items: center;
 }
 
-.main-header-logo{
-    margin: 20px 0px;
-    margin-bottom: 30px;
+.main-header-logo-anchor{
+    margin: 20px 0px 30px 0px;
 }
 
 .main-header-nav{
@@ -87,5 +164,25 @@
 .main-header-list-elt-link:hover{
     border-color: var(--main-blue);
     border-top: none;
+}
+
+main{
+    margin: 30px 15px 30px 15px;
+}
+
+.form-city-search-button{
+    display: none;
+}
+.form-city-search-icon{
+    display: initial;
+    position: absolute;
+    height: var(--height-form-city);
+    left: var(--width-city-text);
+    background-color: var(--main-blue);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 14px 14px 14px 14px;
 }
 }
