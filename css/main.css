@@ -51,7 +51,7 @@
 }
 
 main{
-    margin: 0px 45px;
+    margin: 0px 50px;
 }
 
 .title-below-header{
@@ -65,7 +65,7 @@ main{
 }
 
 .form-city{
-    margin: 15px 0;
+    margin: 15px 0 90px 0;
 }
 
 .form-city-div{
@@ -116,6 +116,73 @@ main{
     display: none;
 }
 
+.filtres-main-div{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filtres-text{
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.filtre-elt{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 48px;
+    margin: 10px 15px;
+    border: 3px solid var(--bg-grey);
+    border-radius: 25px;
+}
+
+.filtre-elt:hover{
+    background-color: var(--main-blue);
+    color: white;
+}
+
+.filtre-icon{
+    padding: 15px;
+    background-color: var(--light-blue);
+    color: var(--main-blue);
+    border-radius: 25px;
+    margin-left: -3px;
+}
+
+.filtre-elt-text{
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.nb-de-logement{
+    display: flex;
+    align-items: center;
+}
+
+.nb-de-logement-icon{
+    margin-right: 10px;
+    padding: 5px;
+    font-weight: bolder;
+    border: 2px solid var(--bg-grey);
+    color: var(--main-blue);
+    border-radius: 12px;
+    height: 24px;
+    width: 24px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nb-de-logement-text{
+    font-size: 15px;
+}
+
 /*BreakPoint pour les tablettes */
 @media (max-width:992px){
     .title-below-header{
@@ -124,6 +191,11 @@ main{
 .paragraph-below-header{
     font-size: 13px;
 }
+
+.filtres-text{
+    width: 90%;
+}
+
 }
 
 /* Breakpoint pour les telephones*/
@@ -184,5 +256,16 @@ main{
     font-weight: bold;
     padding: 15px;
     border-radius: 14px 14px 14px 14px;
+}
+
+.filtres-text{
+    width: 100%;
+}
+.filtres-main-div{
+    width: 100%;
+}
+
+.filtre-elt{
+    margin:5px;
 }
 }
