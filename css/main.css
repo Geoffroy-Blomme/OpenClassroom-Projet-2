@@ -191,6 +191,8 @@ main{
     padding: 6px;
     background-color: white;
     border-radius: 10%;
+    box-shadow: 5px 1px 10px rgb(0 0 0 / 30%);
+
 }
 
 .hebergement-card:hover .hebergement-card-image{
@@ -251,7 +253,7 @@ main{
 
 .populaire-card{
     height: 122px;
-    width: 320px;
+    width: 310px;
     display: flex;
     flex-direction: row;
     margin: 0px 20px 20px 20px;
@@ -277,7 +279,7 @@ main{
 
 .populaire-card-div-image{
     height: 110px;
-    width: 130px;
+    width: 120px;
     overflow: hidden;
     border-radius: 10% 0 0 10%;
 }
@@ -290,7 +292,7 @@ main{
 .populaire-card-body{
     display: flex;
     flex-direction: column;
-    width: 125px;
+    width: 145px;
     margin: 10px;
     font-weight: 600;
 }
@@ -344,10 +346,11 @@ main{
 }
 
 .hebergements-cards-action-text{
-    margin: 30px 0;
+    margin: 20px 40px;
     font-weight: bolder;
     cursor: pointer;
     font-size: 14px;
+    align-self: flex-start;
 }
 
 .populaires-container{
@@ -365,6 +368,81 @@ main{
     font-size: 20px;
 }
 
+.activites-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin:50px 20px 30px 0px;
+}
+
+.activites-title{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.activites-container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.activite-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: 400px;
+    width: 250px;
+    margin-right: 40px;
+}
+
+.activite-wrapper:last-of-type{
+    margin-right: 0px;
+}
+
+.activite-elt{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    box-shadow: 5px 1px 10px rgb(0 0 0 / 30%);
+    overflow: hidden;
+}
+
+
+.activite-img{
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    object-fit: cover;
+
+}
+.activite-text{
+    color: black;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#activite-two{
+    height: 220px;
+}
+#activite-three{
+    height: 180px;
+}
+
+#activite-five{
+    height: 200px;
+}
+
+#activite-six{
+    height: 200px;
+}
 
 /*BreakPoint pour les tablettes */
 @media (max-width:992px){
@@ -377,6 +455,63 @@ main{
 
 .filtres-text{
     width: 90%;
+}
+
+.populaires-container{
+    width: 40%;
+}
+
+.populaire-card-body{
+    width: 120px;
+}
+
+.populaire-card{
+    width: 250px;
+}
+
+.populaire-card-title{
+    font-size: 13px;
+}
+
+.populaire-card-div-image{
+    height: 110px;
+    width: 100px;
+}
+
+.hebergement-card{
+    width: 172px;
+    margin-right: 5px;
+}
+
+.hebergement-card-title{
+    font-size: 12px ;
+}
+
+.hebergement-card-prix{
+    font-size: 11px;
+}
+
+.hebergement-card-div-image{
+    width: 160px;
+}
+
+.activite-wrapper{
+    height: 300px;
+    width: 160px;
+}
+
+#activite-two{
+    height: 160px;
+}
+#activite-three{
+    height: 140px;
+}
+
+#activite-five{
+    height: 150px;
+}
+#activite-six{
+    height: 150px;
 }
 
 }
@@ -475,7 +610,6 @@ main{
     margin: auto;
     margin-bottom: 15px;
     border-radius: 18px 18px 18px 18px;
-    border:1px solid var(--bg-grey);
 }
 
 .hebergement-card-title{
@@ -490,11 +624,17 @@ main{
     border-radius: 12px 12px 0 0 ;
 }
 
+.hebergements-cards-action-text{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .populaire-card{
     width: 100%;
     margin: auto;
     height: 140px;
     margin: 10px 0;
+
 }
 
 .populaire-card-anchor{
@@ -530,12 +670,12 @@ main{
 }
 
 .hebergements-cards-container{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .hebergements-title{
-    margin: 40px 30px 20px 30px;
+    margin: 40px 30px 20px 20px;
 }
 
 .populaires-container{
@@ -546,4 +686,41 @@ main{
 .populaires-title-container{
     margin: 30px 20px;
 }
+
+
+.activites-wrapper{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.activite-wrapper{
+    margin-right: 0px;
+    height: 200px;
+    width: 100%;
+}
+
+#activite-two{
+    height: 200px;
+}
+#activite-three{
+    height: 200px;
+}
+#activite-five{
+    height: 200px;
+}
+#activite-six{
+    height: 200px;
+}
+
+.activites-container{
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 20px;
+    width: calc(100% - 40px);
+}
+
+.activites-title{
+    margin-left: 20px;
+}
+
 }
