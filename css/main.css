@@ -185,6 +185,7 @@ main{
 
 .hebergement-card{
     height: 180px;
+<<<<<<< HEAD
     width: 212px;
     display: flex;
     margin: 20px 20px 0px 0;
@@ -193,6 +194,14 @@ main{
     border-radius: 10%;
     box-shadow: 5px 1px 10px rgb(0 0 0 / 30%);
 
+=======
+    width: 232px;
+    display: flex;
+    margin: 20px;
+    padding: 6px;
+    background-color: red;
+    border-radius: 10%;
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 }
 
 .hebergement-card:hover .hebergement-card-image{
@@ -209,7 +218,11 @@ main{
 
 .hebergement-card-div-image{
     height: 100px;
+<<<<<<< HEAD
     width: 200px;
+=======
+    width: 220px;
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
     position: relative;
     overflow: hidden;
     border-radius: 10% 10% 0 0;
@@ -233,18 +246,25 @@ main{
 
 .hebergement-card-title{
     color: black;
+<<<<<<< HEAD
     font-size: 14px;
+=======
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 }
 
 .hebergement-card-prix{
     color: black;
     margin: 5px 0;
+<<<<<<< HEAD
     font-size: 13px;
     font-weight: 400;
 }
 
 .hebergement-card-rating {
     color: var(--main-blue);
+=======
+    font-size: 14px;
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 }
 
 .hebergement-rating-empty-star{
@@ -253,18 +273,30 @@ main{
 
 .populaire-card{
     height: 122px;
+<<<<<<< HEAD
     width: 310px;
     display: flex;
     flex-direction: row;
     margin: 0px 20px 20px 20px;
     padding: 6px;
     background-color: white;
+=======
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 6px;
+    background-color: red;
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
     border-radius: 20px;
 }
 
 .populaire-card:hover .populaire-card-image{
     height: 110%;
+<<<<<<< HEAD
     width: 110%;
+=======
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 }
 
 .populaire-card:hover .populaire-card-title{
@@ -279,20 +311,36 @@ main{
 
 .populaire-card-div-image{
     height: 110px;
+<<<<<<< HEAD
     width: 120px;
+=======
+    width: 100px;
+    position: relative;
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
     overflow: hidden;
     border-radius: 10% 0 0 10%;
 }
 
 .populaire-card-image{
     height: 100%;
+<<<<<<< HEAD
     width: 100%;
+=======
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 }
 
 .populaire-card-body{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     width: 145px;
+=======
+    width: 125px;
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
     margin: 10px;
     font-weight: 600;
 }
@@ -309,8 +357,12 @@ main{
 }
 
 .populaire-card-rating{
+<<<<<<< HEAD
     margin-top: auto;
     color: var(--main-blue);
+=======
+    margin-top: 20px;
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 }
 
 
@@ -318,6 +370,7 @@ main{
     color: var(--bg-grey);
 }
 
+<<<<<<< HEAD
 .hebergements-populaires-container{
     display: flex;
     margin-top: 30px;
@@ -443,6 +496,8 @@ main{
 #activite-six{
     height: 200px;
 }
+=======
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 
 /*BreakPoint pour les tablettes */
 @media (max-width:992px){
@@ -601,6 +656,7 @@ main{
     margin:5px 5px 5px 0;
 }
 
+<<<<<<< HEAD
 .nb-de-logement{
     margin: 0 20px;
 }
@@ -609,6 +665,11 @@ main{
     width: 100%;
     margin: auto;
     margin-bottom: 15px;
+=======
+.hebergement-card{
+    width: 100%;
+    margin: auto;
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
     border-radius: 18px 18px 18px 18px;
 }
 
@@ -624,17 +685,23 @@ main{
     border-radius: 12px 12px 0 0 ;
 }
 
+<<<<<<< HEAD
 .hebergements-cards-action-text{
     margin-left: 20px;
     margin-right: 20px;
 }
 
+=======
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 .populaire-card{
     width: 100%;
     margin: auto;
     height: 140px;
+<<<<<<< HEAD
     margin: 10px 0;
 
+=======
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 }
 
 .populaire-card-anchor{
@@ -642,6 +709,7 @@ main{
 }
 .populaire-card-div-image{
     height: 130px;
+<<<<<<< HEAD
     width: 40%;
     overflow: hidden;
 }
@@ -723,4 +791,19 @@ main{
     margin-left: 20px;
 }
 
+=======
+    width: 50%;
+}
+.populaire-card-body{
+    margin-left: 30px;
+    width: auto;
+}
+
+.populaire-card-title{
+    font-size: 18px;
+}
+.populaire-card-rating{
+    margin-top: 30px;
+}
+>>>>>>> a6f47e3c38d8e4c3b70333a8f2a515e0ff53f473
 }
