@@ -1,7 +1,7 @@
 @import 'colors.css';
 
 :root{
-    --width-city-text:250px;
+    --width-city-text:220px;
     --height-form-city:48px;
     --common-margin-desktop:45px;
     --common-margin-mobile:20px;
@@ -606,6 +606,7 @@ main{
 .form-city{
     width: 90%;
     margin-left: auto;
+    margin-right: auto;
 }
 
 .form-city-search-button{
