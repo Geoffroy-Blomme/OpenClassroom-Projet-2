@@ -702,8 +702,8 @@ main{
 
 .hebergements-container{
     order: 2;
+    --common-margin-mobile-times-two: calc(2*var(--common-margin-mobile));
     width: calc(100% - var(--common-margin-mobile-times-two));
-    --common-margin-mobile-times-two:2*var(--common-margin-mobile);
     background-color: white;
     margin-right: var(--common-margin-mobile);
     margin-left: var(--common-margin-mobile);
