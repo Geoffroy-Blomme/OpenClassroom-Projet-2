@@ -120,25 +120,25 @@ main{
     display: none;
 }
 
-.filtres-main-div{
+.filters-main-div{
     display: inline-flex;
     align-items: center;
     margin-bottom: 20px;
     align-items: baseline;
 }
 
-.filtres-text{
+.filters-text{
     font-weight: bold;
     margin-right: 10px;
     font-size: 16px;
 }
 
-.filtres-wrapper{
+.filters-wrapper{
     display: flex;
     flex-wrap: wrap;
 }
 
-.filtre-elt{
+.filter-elt{
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -148,12 +148,12 @@ main{
     border-radius: 25px;
 }
 
-.filtre-elt:hover{
+.filter-elt:hover{
     background-color: var(--main-blue);
     color: white;
 }
 
-.filtre-icon{
+.filter-icon{
     padding: 15px;
     background-color: var(--light-blue);
     color: var(--main-blue);
@@ -161,19 +161,19 @@ main{
     margin-left: -3px;
 }
 
-.filtre-elt-text{
+.filter-elt-text{
     font-weight: bolder;
     font-size: 17px;
     padding: 0 15px;
     margin: 0;
 }
 
-.nb-de-logement{
+.number-of-lodging{
     display: flex;
     align-items: center;
 }
 
-.nb-de-logement-icon{
+.number-of-lodging-icon{
     margin-right: 10px;
     padding: 5px;
     font-weight: bolder;
@@ -188,11 +188,11 @@ main{
 
 }
 
-.nb-de-logement-text{
+.number-of-lodging-text{
     font-size: 15px;
 }
 
-.hebergement-card{
+.accommodation-card{
     height: 180px;
     width: 212px;
     display: flex;
@@ -204,19 +204,19 @@ main{
 
 }
 
-.hebergement-card:hover .hebergement-card-image{
+.accommodation-card:hover .accommodation-card-image{
     width: 110%;
 }
 
-.hebergement-card:hover .hebergement-card-title{
+.accommodation-card:hover .accommodation-card-title{
     color: var(--main-blue);
 }
 
-.hebergement-card-anchor{
+.accommodation-card-anchor{
     text-decoration: none;
 }
 
-.hebergement-card-div-image{
+.accommodation-card-div-image{
     height: 100px;
     width: 200px;
     position: relative;
@@ -224,7 +224,7 @@ main{
     border-radius: 10% 10% 0 0;
 }
 
-.hebergement-card-image{
+.accommodation-card-image{
     width: 100%;
     height: auto;
     position: absolute;
@@ -233,34 +233,34 @@ main{
     transform: translate(-50%, -50%);
 }
 
-.hebergement-card-body{
+.accommodation-card-body{
     display: flex;
     flex-direction: column;
     margin: 5px 10px;
     font-weight: 600;
 }
 
-.hebergement-card-title{
+.accommodation-card-title{
     color: black;
     font-size: 14px;
 }
 
-.hebergement-card-prix{
+.accommodation-card-price{
     color: black;
     margin: 5px 0;
     font-size: 13px;
     font-weight: 400;
 }
 
-.hebergement-card-rating {
+.accommodation-card-rating {
     color: var(--main-blue);
 }
 
-.hebergement-rating-empty-star{
+.accommodation-rating-empty-star{
     color: var(--bg-grey);
 }
 
-.populaire-card{
+.popular-card{
     height: 122px;
     width: 310px;
     display: flex;
@@ -271,34 +271,34 @@ main{
     border-radius: 20px;
 }
 
-.populaire-card:hover .populaire-card-image{
+.popular-card:hover .popular-card-image{
     height: 110%;
     width: 110%;
 }
 
-.populaire-card:hover .populaire-card-title{
+.popular-card:hover .popular-card-title{
     color: var(--main-blue);
 }
 
-.populaire-card-anchor{
+.popular-card-anchor{
     text-decoration: none;
     display: flex;
     padding-right: 20px;
 }
 
-.populaire-card-div-image{
+.popular-card-div-image{
     height: 110px;
     width: 120px;
     overflow: hidden;
     border-radius: 10% 0 0 10%;
 }
 
-.populaire-card-image{
+.popular-card-image{
     height: 100%;
     width: 100%;
 }
 
-.populaire-card-body{
+.popular-card-body{
     display: flex;
     flex-direction: column;
     width: 145px;
@@ -306,66 +306,66 @@ main{
     font-weight: 600;
 }
 
-.populaire-card-title{
+.popular-card-title{
     color: black;
     font-size: 15px;
 }
 
-.populaire-card-prix{
+.popular-card-price{
     color: black;
     margin: 5px 0;
     font-size: 12px;
 }
 
-.populaire-card-rating{
+.popular-card-rating{
     margin-top: auto;
     color: var(--main-blue);
 }
 
 
-.populaire-rating-empty-star{
+.popular-rating-empty-star{
     color: var(--bg-grey);
 }
 
-.hebergements-populaires-container{
+.accommodations-populars-container{
     display: flex;
     margin-top: 30px;
 }
 
 
 
-.hebergements-container{
+.accommodations-container{
     display: flex;
-    --hebergements-container--margin:35px;
+    --accommodations-container--margin:35px;
     width: 67%;
     flex-direction: column;
     background-color: var(--bg-grey);
     border-radius: 20px;
-    margin-right: var(--hebergements-container--margin);
+    margin-right: var(--accommodations-container--margin);
 }
 
-.hebergements-title{
+.accommodations-title{
     font-size: 20px;
     font-weight: bolder;
-    margin-left: var(--hebergements-container--margin);
-    margin-top: var(--hebergements-container--margin);
+    margin-left: var(--accommodations-container--margin);
+    margin-top: var(--accommodations-container--margin);
 }
 
-.hebergements-cards-container{
+.accommodations-cards-container{
     display: flex;
     flex-wrap: wrap;
-    margin-left: var(--hebergements-container--margin);
+    margin-left: var(--accommodations-container--margin);
 }
 
-.hebergements-cards-action-text{
-    margin: 30px var(--hebergements-container--margin);
+.accommodations-cards-action-text{
+    margin: 30px var(--accommodations-container--margin);
     font-weight: bolder;
     cursor: pointer;
     font-size: 16px;
     align-self: flex-start;
 }
 
-.populaires-container{
+.populars-container{
     display: flex;
     width: 33%;
     flex-direction: column;
@@ -373,7 +373,7 @@ main{
     border-radius: 15px;
 }
 
-.populaires-title-container{
+.populars-title-container{
     display: flex;
     justify-content: space-between;
     margin: 30px 30px;
@@ -381,45 +381,45 @@ main{
     font-size: 20px;
 }
 
-.activites-wrapper{
+.activities-wrapper{
     display: flex;
     flex-direction: column;
     margin:50px 0px 30px 0px;
 }
 
-.activites-title{
+.activities-title{
     font-size: 20px;
     font-weight: bolder;
     margin-bottom: 20px;
 }
 
-.activites-container{
+.activities-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    --activites-container-height:400px;
-    height: var(--activites-container-height);
+    --activities-container-height:400px;
+    height: var(--activities-container-height);
 }
 
-.activite-wrapper{
+.activity-wrapper{
     display: flex;
     flex-direction: column;
     text-decoration: none;
     height: 100%;
     width: calc(25% - 40px);
-    --activite-wrapper-margin-bottom:30px;
+    --activity-wrapper-margin-bottom:30px;
     margin-right: 40px;
-    margin-bottom: var(--activite-wrapper-margin-bottom);
+    margin-bottom: var(--activity-wrapper-margin-bottom);
 }
 
 /** Pas besoinde de margin a droite
 car ce sont les 2 derniers  **/
-.activite-wrapper:nth-last-of-type(-n+2){
+.activity-wrapper:nth-last-of-type(-n+2){
     margin-right: 0;
 }
 
-.activite-elt{
+.activity-elt{
     display: flex;
     flex-direction: column;
     border-radius: 5%;
@@ -430,14 +430,14 @@ car ce sont les 2 derniers  **/
 }
 
 
-.activite-img{
+.activity-img{
     border-radius: 5% 5% 0 0;
     width: 100%;
     height: calc(100% - 50px);
     object-fit: cover;
 
 }
-.activite-text{
+.activity-text{
     color: black;
     margin-bottom: auto;
     margin-top: auto;
@@ -446,19 +446,19 @@ car ce sont les 2 derniers  **/
     font-weight: bolder;
 }
 
-#activite-two{
-    height: calc(60% - var(--activite-wrapper-margin-bottom));
+#activity-two{
+    height: calc(60% - var(--activity-wrapper-margin-bottom));
 }
-#activite-three{
-    height: calc(40% - var(--activite-wrapper-margin-bottom));
-}
-
-#activite-five{
-    height: calc(50% - var(--activite-wrapper-margin-bottom));
+#activity-three{
+    height: calc(40% - var(--activity-wrapper-margin-bottom));
 }
 
-#activite-six{
-    height: calc(50% - var(--activite-wrapper-margin-bottom));
+#activity-five{
+    height: calc(50% - var(--activity-wrapper-margin-bottom));
+}
+
+#activity-six{
+    height: calc(50% - var(--activity-wrapper-margin-bottom));
 }
 
 .main-footer{
@@ -500,51 +500,51 @@ car ce sont les 2 derniers  **/
     font-size: 13px;
 }
 
-.populaires-container{
+.populars-container{
     width: 40%;
 }
 
-.populaire-card-body{
+.popular-card-body{
     width: 120px;
 }
 
-.populaire-card{
+.popular-card{
     width: 250px;
 }
 
-.populaire-card-title{
+.popular-card-title{
     font-size: 13px;
 }
 
-.populaire-card-div-image{
+.popular-card-div-image{
     height: 110px;
     width: 100px;
 }
 
-.hebergement-card{
+.accommodation-card{
     width: 172px;
     margin-right: 5px;
 }
 
-.hebergement-card-title{
+.accommodation-card-title{
     font-size: 12px ;
 }
 
-.hebergement-card-prix{
+.accommodation-card-price{
     font-size: 11px;
 }
 
-.hebergement-card-div-image{
+.accommodation-card-div-image{
     width: 160px;
 }
 
-.activites-container{
-    --activites-container-height:300px;
+.activities-container{
+    --activities-container-height:300px;
 }
 
-.activite-wrapper{
+.activity-wrapper{
     width: calc(25% - 30px);
-    --activite-wrapper-margin-bottom:30px;
+    --activity-wrapper-margin-bottom:30px;
 }
 
 
@@ -625,49 +625,49 @@ main{
     border-radius: 14px 14px 14px 14px;
 }
 
-.filtres-text{
+.filters-text{
     width: 100%;
     margin-bottom: 15px;
 }
-.filtres-main-div{
+.filters-main-div{
     width: 100%;
     padding: 0 20px;
     flex-direction: column;
 }
 
-.filtre-elt{
+.filter-elt{
     margin:5px 5px 5px 0;
 }
 
-.nb-de-logement{
+.number-of-lodging{
     margin: 0 20px;
 }
 
-.hebergement-card{
+.accommodation-card{
     width: 100%;
     margin: auto;
     margin-bottom: 15px;
     border-radius: 18px 18px 18px 18px;
 }
 
-.hebergement-card-title{
+.accommodation-card-title{
     font-size: 18px;
 }
 
-.hebergement-card-anchor{
+.accommodation-card-anchor{
     width: 100%;
 }
-.hebergement-card-div-image{
+.accommodation-card-div-image{
     width: 100%;
     border-radius: 12px 12px 0 0 ;
 }
 
-.hebergements-cards-action-text{
+.accommodations-cards-action-text{
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.populaire-card{
+.popular-card{
     width: 100%;
     margin: auto;
     height: 140px;
@@ -675,32 +675,32 @@ main{
 
 }
 
-.populaire-card-anchor{
+.popular-card-anchor{
     width: 100%;
 }
-.populaire-card-div-image{
+.popular-card-div-image{
     height: 130px;
     width: 40%;
     overflow: hidden;
 }
-.populaire-card-body{
+.popular-card-body{
     margin-left: 30px;
 }
 
-.populaires-container-cards{
+.populars-container-cards{
     margin: 0 var(--common-margin-mobile) 20px  var(--common-margin-mobile);
 }
 
-.populaire-card-title{
+.popular-card-title{
     font-size: 14px;
     font-weight: bold;
 }
 
-.hebergements-populaires-container{
+.accommodations-populars-container{
     flex-direction: column;
 }
 
-.hebergements-container{
+.accommodations-container{
     order: 2;
     --common-margin-mobile-times-two: calc(2*var(--common-margin-mobile));
     width: calc(100% - var(--common-margin-mobile-times-two));
@@ -708,32 +708,32 @@ main{
     margin-right: var(--common-margin-mobile);
     margin-left: var(--common-margin-mobile);
 }
-.hebergements-cards-container{
+.accommodations-cards-container{
     margin-left: 0;
     margin-right: 0;
 }
 
-.hebergements-title{
+.accommodations-title{
     margin: 40px 0 20px 0;
 }
 
-.populaires-container{
+.populars-container{
     order: 1;
     width: 100%;
     border-radius: 0px;
 }
 
-.populaires-title-container{
+.populars-title-container{
     margin: 30px var(--common-margin-mobile) 20px var(--common-margin-mobile);
 }
 
 
-.activites-wrapper{
+.activities-wrapper{
     margin-right: 0;
     margin-left: 0;
 }
 
-.activites-container{
+.activities-container{
     justify-content: center;
     flex-direction: row;
     margin-left: var(--common-margin-mobile);
@@ -741,31 +741,31 @@ main{
     height: auto;
 }
 
-.activites-title{
+.activities-title{
     margin-left: var(--common-margin-mobile);
 }
 
-.activite-wrapper{
+.activity-wrapper{
     width: 100%;
-    --activite-wrapper-height-mobile:200px;
-    height: var(--activite-wrapper-height-mobile);
+    --activity-wrapper-height-mobile:200px;
+    height: var(--activity-wrapper-height-mobile);
     margin-right: var(--common-margin-mobile);
 }
 
-#activite-two{
-    height: var(--activite-wrapper-height-mobile);
+#activity-two{
+    height: var(--activity-wrapper-height-mobile);
 }
-#activite-three{
-    height: var(--activite-wrapper-height-mobile);
+#activity-three{
+    height: var(--activity-wrapper-height-mobile);
 }
-#activite-five{
-    height: var(--activite-wrapper-height-mobile);
+#activity-five{
+    height: var(--activity-wrapper-height-mobile);
 }
-#activite-six{
-    height: var(--activite-wrapper-height-mobile);
+#activity-six{
+    height: var(--activity-wrapper-height-mobile);
 }
 
-.activite-wrapper:nth-last-of-type(-n+2){
+.activity-wrapper:nth-last-of-type(-n+2){
     margin-right: var(--common-margin-mobile);
 }
 
