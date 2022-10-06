@@ -327,6 +327,7 @@ main{
     color: black;
     margin: 5px 0;
     font-size: 12px;
+    font-weight: 400;
 }
 
 .popular-card-rating{
@@ -418,35 +419,34 @@ main{
     height: var(--activities-container-height);
 }
 
-.activity-wrapper{
+.activity-anchor{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
-    text-decoration: none;
     height: 100%;
-    width: calc(25% - 40px);
-    --activity-wrapper-margin-bottom:30px;
-    margin-right: 40px;
-    margin-bottom: var(--activity-wrapper-margin-bottom);
+    width: 100%;
+    
 }
 
 /** Pas besoinde de margin a droite
 car ce sont les 2 derniers  **/
-.activity-wrapper:nth-last-of-type(-n+2){
+.activity-anchor:nth-last-of-type(-n+2){
     margin-right: 0;
 }
 
-.activity-wrapper:hover .activity-img{
+.activity-anchor:hover .activity-img{
     width: 110%;
 }
 
 .activity-elt{
-    display: flex;
-    flex-direction: column;
-    border-radius: 5%;
-    width: 100%;
     height: 100%;
+    width: calc(25% - 40px);
     box-shadow: 5px 1px 10px rgb(0 0 0 / 30%);
+    border-radius: 5%;
     overflow: hidden;
+    --activity-anchor-margin-bottom:30px;
+    margin-right: 40px;
+    margin-bottom: var(--activity-anchor-margin-bottom);
 }
 
 
@@ -467,18 +467,18 @@ car ce sont les 2 derniers  **/
 }
 
 #activity-two{
-    height: calc(60% - var(--activity-wrapper-margin-bottom));
+    height: calc(60% - var(--activity-anchor-margin-bottom));
 }
 #activity-three{
-    height: calc(40% - var(--activity-wrapper-margin-bottom));
+    height: calc(40% - var(--activity-anchor-margin-bottom));
 }
 
 #activity-five{
-    height: calc(50% - var(--activity-wrapper-margin-bottom));
+    height: calc(50% - var(--activity-anchor-margin-bottom));
 }
 
 #activity-six{
-    height: calc(50% - var(--activity-wrapper-margin-bottom));
+    height: calc(50% - var(--activity-anchor-margin-bottom));
 }
 
 .main-footer{
@@ -497,6 +497,8 @@ car ce sont les 2 derniers  **/
     flex-direction: column;
     width: 33%;
     margin-left: var(--common-margin-desktop);
+    list-style: none;
+    padding: 0;
 }
 
 .main-footer-elt-title{
@@ -557,6 +559,9 @@ car ce sont les 2 derniers  **/
     width: 100px;
 }
 
+.accommodations-cards-container{
+    justify-content: space-around;
+}
 .accommodation-card{
     width: 172px;
     margin-right: 5px;
@@ -578,9 +583,8 @@ car ce sont les 2 derniers  **/
     --activities-container-height:300px;
 }
 
-.activity-wrapper{
-    width: calc(25% - 30px);
-    --activity-wrapper-margin-bottom:30px;
+.activity-anchor{
+    --activity-anchor-margin-bottom:30px;
 }
 
 
@@ -765,9 +769,9 @@ main{
 
 .activities-container{
     justify-content: center;
-    flex-direction: row;
     margin-left: var(--common-margin-mobile);
-    width: calc(100% - var(--common-margin-mobile));
+    margin-right: var(--common-margin-mobile);
+    width: calc(100% - var(--common-margin-mobile) - var(--common-margin-mobile));
     height: auto;
 }
 
@@ -775,27 +779,30 @@ main{
     margin-left: var(--common-margin-mobile);
 }
 
-.activity-wrapper{
+.activity-elt{
     width: 100%;
-    --activity-wrapper-height-mobile:200px;
-    height: var(--activity-wrapper-height-mobile);
-    margin-right: var(--common-margin-mobile);
+}
+
+.activity-anchor{
+    width: 100%;
+    --activity-anchor-height-mobile:200px;
+    height: var(--activity-anchor-height-mobile);
 }
 
 #activity-two{
-    height: var(--activity-wrapper-height-mobile);
+    height: var(--activity-anchor-height-mobile);
 }
 #activity-three{
-    height: var(--activity-wrapper-height-mobile);
+    height: var(--activity-anchor-height-mobile);
 }
 #activity-five{
-    height: var(--activity-wrapper-height-mobile);
+    height: var(--activity-anchor-height-mobile);
 }
 #activity-six{
-    height: var(--activity-wrapper-height-mobile);
+    height: var(--activity-anchor-height-mobile);
 }
 
-.activity-wrapper:nth-last-of-type(-n+2){
+.activity-anchor:nth-last-of-type(-n+2){
     margin-right: var(--common-margin-mobile);
 }
 
