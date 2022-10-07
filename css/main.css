@@ -4,17 +4,22 @@
     --on-hover-effect-text-color:var(--main-blue);
     --width-city-text:220px;
     --height-form-city:48px;
-    --common-margin-desktop:45px;
+    --common-margin-desktop:35px;
     --common-margin-mobile:20px;
     --accommodations-common-margin:35px;
     --popular-card-margin-side:20px;
     --popular-card-margin-side-times-two:calc(var(--popular-card-margin-side * 2));
+    --activity-anchor-height-mobile:170px;
 
 }
 
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+}
+
+article{
+    box-shadow: 2px 1px 10px rgb(0 0 0 / 30%);
 }
 
 .main-header{
@@ -205,7 +210,6 @@ main{
     padding: 6px;
     background-color: white;
     border-radius: 10%;
-    box-shadow: 5px 1px 10px rgb(0 0 0 / 30%);
 }
 
 
@@ -441,7 +445,6 @@ car ce sont les 2 derniers  **/
 .activity-elt{
     height: 100%;
     width: calc(25% - 40px);
-    box-shadow: 5px 1px 10px rgb(0 0 0 / 30%);
     border-radius: 5%;
     overflow: hidden;
     --activity-anchor-margin-bottom:30px;
@@ -542,13 +545,7 @@ car ce sont les 2 derniers  **/
     width: 40%;
 }
 
-.popular-card-body{
-    width: 120px;
-}
 
-.popular-card{
-    width: 250px;
-}
 
 .popular-card-title{
     font-size: 13px;
@@ -572,7 +569,7 @@ car ce sont les 2 derniers  **/
 }
 
 .accommodation-card-price{
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .accommodation-card-div-image{
@@ -637,9 +634,11 @@ main{
 
 .title-below-header{
     margin: 10px 20px;
+    font-size: 20px;
 }
 .paragraph-below-header{
     margin: 10px 20px;
+    font-size: 16px;
 }
 
 .form-city{
@@ -690,7 +689,7 @@ main{
 }
 
 .accommodation-card-title{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .accommodation-card-anchor{
@@ -722,7 +721,7 @@ main{
     overflow: hidden;
 }
 .popular-card-body{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .populars-container-cards{
@@ -730,7 +729,7 @@ main{
 }
 
 .popular-card-title{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -763,8 +762,8 @@ main{
 
 
 .activities-wrapper{
-    margin-right: 0;
-    margin-left: 0;
+
+    margin:30px 0 20px 0;
 }
 
 .activities-container{
@@ -785,7 +784,6 @@ main{
 
 .activity-anchor{
     width: 100%;
-    --activity-anchor-height-mobile:200px;
     height: var(--activity-anchor-height-mobile);
 }
 
@@ -808,12 +806,12 @@ main{
 
 .main-footer-wrapper{
     flex-direction: column;
-    padding: 40px var(--common-margin-mobile) 40px var(--common-margin-mobile);
+    padding: 30px var(--common-margin-mobile) 40px var(--common-margin-mobile);
 }
 
 .main-footer-elt{
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-left: 0;    
 }
 
@@ -821,4 +819,7 @@ main{
     margin-bottom: 0;
 }
 
+.main-footer-elt-title{
+    font-size: 18px;
+}
 }
