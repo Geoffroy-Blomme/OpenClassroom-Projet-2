@@ -262,6 +262,7 @@ main{
     color: black;
     font-size: 14px;
     overflow-wrap: break-word;
+    margin:0;
 }
 
 .accommodation-card-price{
@@ -324,6 +325,7 @@ main{
 
 .popular-card-title{
     color: black;
+    margin: 0;
     font-size: 15px;
 }
 
@@ -361,6 +363,7 @@ main{
 .accommodations-title{
     font-size: 20px;
     font-weight: bolder;
+    margin: 0;
     margin-left: var(--accommodations-common-margin);
     margin-top: var(--accommodations-common-margin);
 }
@@ -396,6 +399,10 @@ main{
     margin-bottom: 0;
     font-weight: bolder;
     font-size: 20px;
+}
+
+.populars-title-text{
+    margin: 0;
 }
 
 .populars-container-cards{
