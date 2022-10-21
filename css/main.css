@@ -432,11 +432,14 @@ main{
 
 .activity-anchor{
     text-decoration: none;
+}
+
+.activity-elt__figure{
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
-    
+    margin: 0;
 }
 
 /** Pas besoinde de margin a droite
@@ -584,7 +587,7 @@ car ce sont les 2 derniers  **/
 }
 
 .activities-container{
-    --activities-container-height:300px;
+    --activities-container-height:400px;
 }
 
 .activity-anchor{
@@ -660,6 +663,7 @@ main{
 .form-city-search-icon{
     display: initial;
     position: absolute;
+    cursor: pointer;
     height: var(--height-form-city);
     left: var(--width-city-text);
     background-color: var(--main-blue);
@@ -792,6 +796,7 @@ main{
 .activity-anchor{
     width: 100%;
     height: var(--activity-anchor-height-mobile);
+    display: flex;
 }
 
 #activity-two{
